@@ -18,6 +18,9 @@ app.use(cors(corsOptions));
 app.get('/hello', (req, res) => {
   res.json({ message: 'hello world' });
 });
+app.get('/name', (req, res) => {
+  res.json({ message: 'my name is mohammad' });
+});
 
 // Start the server
 app.listen(port, () => {
